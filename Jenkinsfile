@@ -8,6 +8,7 @@ node {
     dir('Lesson5/ActivityA') {
         stage("Install Requirements") {
             sh 'apk add make'
+            sh 'apk add python python-dev py-pip build-base'
             sh 'pip install virtualenv'
             sh 'make install'
         }
