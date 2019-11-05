@@ -28,3 +28,4 @@ node {
 
 def printMessage(message) {
     echo "${message}"
+}
