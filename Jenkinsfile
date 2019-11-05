@@ -14,6 +14,7 @@ node {
         }
 
         stage("Run Tests") {
+            sh 'find / -name nosetests 2>/dev/null'
             sh 'make jenkins_test'
         }
 
